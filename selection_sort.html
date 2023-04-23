@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="styles/default.css"/>
+
+        <script src="scripts/selection_sort.js"></script>
+        <script src="scripts/main.js" defer></script>
+
+        <title>Selection Sort</title>
+    </head>
+
+    <body>
+        <div id="main-container">
+            <div id="box-container">
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+                <div class="number-box">&nbsp;</div>
+            </div>
+
+            <button id="sort-button" onclick="sortBoxes();">sort</button>
+            <button id="shuffle-button" onclick="shuffleBoxes();">shuffle</button>
+
+            <div id="input-container">
+                <span>delay (ms): </span><input id="input-delay" type="number" size="5" min="1" max="1000" value="150"/>
+            </div>
+        </div>
+    </body>
+</html>
