@@ -31,7 +31,7 @@ async function sortBoxes() {
         const box = boxes[boxes.length - 1 - iteration];
 
         // reset the color of the last box
-        box.style.backgroundColor = "#f1f1f1";
+        box.style.backgroundColor = "#ffff30";
     }
 
     // finish the sorting with an animation
