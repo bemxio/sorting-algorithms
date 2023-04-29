@@ -5,6 +5,8 @@ function sleep(miliseconds) {
 
 // basic Fisher–Yates shuffle algorithm
 function shuffleBoxes() {
+    resetBoxes(); // reset the color of the boxes
+
     for (let index = boxes.length; index > 0; index--) {
         // get a random index from the remaining boxes
         let pick = Math.floor(Math.random() * index);
@@ -15,12 +17,17 @@ function shuffleBoxes() {
 
         // swap the boxes
         [a.textContent, b.textContent] = [b.textContent, a.textContent];
-
-        // reset the color of the box
-        b.style.backgroundColor = "#f1f1f1";
     }
 }
 
+// function for resetting the color of the boxes
+function resetBoxes() {
+    for (const box of boxes) {
+        box.style.backgroundColor = "#f1f1f1";
+    }
+}
+
+// finish sort function by changing the color of the boxes to green
 async function finishSorting() {
     for (let index = 0; index < boxes.length; index++) {
         // get the box element

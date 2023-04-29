@@ -1,5 +1,7 @@
 // selection sort algorithm
 async function sortBoxes() {
+    resetBoxes(); // reset the color of the boxes
+
     sortButton.disabled = true; // disable the sort button
     shuffleButton.disabled = true; // disable the shuffle button
 
